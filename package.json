@@ -1,0 +1,21 @@
+{
+  "name": "mix-with",
+  "version": "0.0.0",
+  "description": "Es6 mixins",
+  "main": "index.js",
+  "repository": "https://github.com/chadkirby/mix-with.git",
+  "author": "Chad Kirby <chad.kirby@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-plugin-turbopatent": "^4.0.0",
+    "tap-difflet": "^0.7.2",
+    "tape": "^4.11.0",
+    "tom-jumbo-grumbo": "git+ssh://git@github.com/PatentNavigation/tom-jumbo-grumbo.git#v1.0.3"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "yarn test:tape && yarn lint",
+    "test:tape": "tape `find tests -name \\*-test.js` | tap-difflet --pessimistic"
+  }
+}
