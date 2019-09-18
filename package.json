@@ -1,9 +1,12 @@
 {
-  "name": "mix-with",
-  "version": "1.0.0",
+  "name": "@ckirby/mix-with",
+  "version": "1.0.1",
   "description": "Es6 mixins",
   "main": "index.js",
-  "repository": "https://github.com/chadkirby/mix-with.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chadkirby/mix-with.git"
+  },
   "author": "Chad Kirby <chad.kirby@gmail.com>",
   "license": "MIT",
   "devDependencies": {
@@ -17,5 +20,12 @@
     "lint": "eslint .",
     "test": "yarn test:tape && yarn lint",
     "test:tape": "tape `find tests -name \\*-test.js` | tap-difflet --pessimistic"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/chadkirby/mix-with/issues"
+  },
+  "homepage": "https://github.com/chadkirby/mix-with#readme",
+  "keywords": [
+    "es6"
+  ]
 }
